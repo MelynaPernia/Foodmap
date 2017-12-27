@@ -1,20 +1,19 @@
 :root {
   /* --black: #2B2B2B; */
-  --white: #ffffff;
+  --blue: #5B5F97;
   --black: #000000;
+  --white: #FFFFFB;
+  --pink: #FFA69E;
 }
 
 body {
   font-family: 'Raleway', 'Acme', sans-serif;
+  background: var(--blue);
+  color: var(--white);
 }
 
 .vh-100 {
   height: 100vh;
-}
-
-.container-fluid {
-  background: var(--white);
-  color: var(--black);
 }
 
 .container-flex {
@@ -28,9 +27,19 @@ body {
   font-family: 'Acme';
 }
 
-
-
 /*********************************/
 .image-logo{
   height: 10vh;
+}
+
+.images-list {
+  margin-top: 2vh;
+}
+
+.s {
+  height: 15vh;
+}
+
+.s img {
+  height: 15vh;
 }
