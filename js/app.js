@@ -37,12 +37,15 @@ function setRestaurant(typeFood) {
     // $('.images-list p').attr('disabled', 'false');
     img.attr('src', '../assets/images/restaurants/' + arrRestaurant[i]['photo']);
     img.attr('class', 'img-responsive');
-
+    img.attr('data-toggle', 'modal');
+    img.attr('data-target', '#myModal');
     img.attr('alt', 'food criolla');
     div.attr('class', 'col-xs-6');
     div.append(nameRestaurant);
     div.append(img);
     $('.images-list').append(div);
+
+    // data-toggle="modal" data-target="#myModal"
   }
   // $('.images-list p:hidden').show(3000);
 }
@@ -50,15 +53,10 @@ function setRestaurant(typeFood) {
 setRestaurant('comida criolla');
 
 $('.images-list img').mouseover(function() {
-
   $(this).addClass("img-opacity");
 }).mouseout(function() {
   $(this).removeClass("img-opacity");
 });
-
-
-
-
 
 function setDataFood(nameRestaurant) {
 
@@ -72,14 +70,19 @@ function setDataFood(nameRestaurant) {
       if (arrRestaurant[j]['name'] === nameRestaurant) {
         console.log(arrRestaurant[j]['address']);
         console.log(arrRestaurant[j]['price']);
+        var photo = arrRestaurant[j]['photo'];
+        var address = arrRestaurant[j]['address'];
+        var detalles = arrRestaurant[j]['phono'];
+
+        $('.modal-title').text(nameRestaurant);
+        $('.modal-photo').text(photo);
+        $('.modal-address').text(address);
+        $('.modal-detalles').text(detalles);
       }
     }
   }
 }
-
-
-
-$('.images-list img').click(function(){
+$('.images-list img').click(function() {
   // console.log($(this).prev().text());
   var name = $(this).prev().text()
   // var nameFood = $(this).prev().text());
