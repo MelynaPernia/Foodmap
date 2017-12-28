@@ -1,57 +1,69 @@
 var data = {
-  'food-criolla': [
+  'comida marina': [
     {
-      'name': 'Ají de gallina',
-      'precio': 15.50,
-      'photo': 'aji-gallina.jpg',
-      'active': true
+      name: 'Cevichería Marimar',
+      price: {
+        'price-min': 19.90,
+        'price-max': 40.00
+      },
+      address: 'Av. Aviación 3031, Cercado de Lima 15037',
+      phono: '(01) 2250044',
+      photo: ''
     },
     {
-      'name': 'Arroz con pollo',
-      'precio': 12.00,
-      'photo': 'arroz-pollo.jpg',
-      'active': true
-    },
-    {
-      'name': 'Cau cau',
-      'precio': 15.50,
-      'photo': 'cau-cau.jpg',
-      'active': true
+      name: 'Cevicheria Los Delfines',
+      price: {
+        'price-min': 15.90,
+        'price-max': 29.90
+      },
+      address: 'Isabel Chimpu Ocllo 759, Carabayllo 15316',
+      phono: '(01) 5435650',
+      photo: ''
     }
   ],
-  'food-marina': [
+  'comida criolla': [
     {
-      'name': 'Arroz con mariscos',
-      'precio': 25.90,
-      'photo': 'arroz-mariscos.jpg',
-      'active': true
+      name: 'tradiciones criollas',
+      price: {
+        'price-min': 12.00,
+        'price-max': 29.90
+      },
+      address: 'Jirón Cuzco 270, Cercado de Lima 15001',
+      phono: '(01) 4285349',
+      photo: 'tradiciones criollas.jpg'
     },
     {
-      'name': 'Ceviche',
-      'precio': 28.00,
-      'photo': 'ceviche.jpg',
-      'active': true
-    },
-    {
-      'name': 'Jalea',
-      'precio': 29.90,
-      'photo': 'jalea.jpg',
-      'active': true
+      name: 'sabores peruanos',
+      price: {
+        'price-min': 15.00,
+        'price-max': 29.90
+      },
+      address: 'Av. Alfredo Benavides 2392, Miraflores 15048',
+      phono: '(01) 4492145',
+      photo: 'sabores peruanos.jpg'
+
     }
   ],
-  'food-selva': [
+  'comida de la selva': [
     {
-      'name': 'Juanes',
-      'precio': 15.90,
-      'photo': 'juanes.jpg',
-      'active': true
+      name: 'La choza de la anaconda',
+      price: {
+        'price-min': 8.50,
+        'price-max': 35.90
+      },
+      address: 'Av. Caminos del Inca 1666, Santiago de Surco 15039',
+      phono: '(01) 2752738',
+      photo: ''
     },
     {
-      'name': 'Tacacho',
-      'precio': 17.90,
-      'photo': 'tacacho.jpg',
-      'active': true
+      name: 'El guacamayo',
+      price: {
+        'price-min': 14.90,
+        'price-max': 29.90
+      },
+      address: 'Av Mello Franco 626, Jesús María 15072',
+      phono: '(01) 4314803',
+      photo: ''
     }
   ]
-
 };
