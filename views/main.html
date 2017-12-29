@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +9,37 @@
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-
 <body class="vh-100">
+  <!-- header -->
   <header class="container text-center">
     <h3 class="">Foodmap</h3>
     <hr>
   </header>
+  <!-- section of the map -->
   <section class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div id="googleMap" style="width:100%;height:150px;"></div>
+        <div id="googleMap"></div>
       </div>
     </div>
   </section>
-
+  <!-- section of images -->
   <section class="container">
     <div class="row">
       <div class="col-xs-12">
         <h3>Comida cerca de ti</h3>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
+          <input type="text" class="form-control input-type-food" placeholder="Tipo de comida ej. comida marina..." autofocus>
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            <button class="btn btn-default btn-search-type-food" type="button "><span class="glyphicon glyphicon-search"></span></button>
           </span>
-
         </div>
-
         <div class="row images-list">
         </div>
+      </div>
     </div>
   </section>
-
+  <!-- modal of the images -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -49,16 +48,16 @@
           <h4 class="modal-title text-uppercase" id="myModalLabel">Modal title</h4>
         </div>
         <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 modal-photo">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 modal-address"></div>
-                <div class="col-xs-6 modal-detalles"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 modal-photo">
               </div>
             </div>
+            <div class="row">
+              <div class="col-xs-6 modal-address"></div>
+              <div class="col-xs-6 modal-detalles"></div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary text-lowercase">pedir ahora</button>
@@ -66,16 +65,11 @@
       </div>
     </div>
   </div>
-
-
   <script src="../vendors/lib/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../js/data.js"></script>
   <script src="../js/map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXKe14xW7zJYuAMGijqniuaWbLFL121M4&callback=myMap"></script>
-  <script src="../js/app.js"></script>
-  <!-- <script src="../vendors/bootstrap/js/bootstrap.js"></script> -->
-  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
 </body>
-
 </html>

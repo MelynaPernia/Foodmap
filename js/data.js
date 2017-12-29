@@ -8,7 +8,7 @@ var data = {
       },
       address: 'Av. Aviación 3031, Cercado de Lima 15037',
       phono: '(01) 2250044',
-      photo: ''
+      photo: 'tradiciones criollas.jpg'
     },
     {
       name: 'Cevicheria Los Delfines',
@@ -18,7 +18,7 @@ var data = {
       },
       address: 'Isabel Chimpu Ocllo 759, Carabayllo 15316',
       phono: '(01) 5435650',
-      photo: ''
+      photo: 'tradiciones criollas.jpg'
     }
   ],
   'comida criolla': [
@@ -53,7 +53,7 @@ var data = {
       },
       address: 'Av. Caminos del Inca 1666, Santiago de Surco 15039',
       phono: '(01) 2752738',
-      photo: ''
+      photo: 'tradiciones criollas.jpg'
     },
     {
       name: 'El guacamayo',
@@ -63,7 +63,7 @@ var data = {
       },
       address: 'Av Mello Franco 626, Jesús María 15072',
       phono: '(01) 4314803',
-      photo: ''
+      photo: 'tradiciones criollas.jpg'
     }
   ]
 };
