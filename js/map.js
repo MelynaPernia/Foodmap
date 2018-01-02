@@ -8,6 +8,6 @@ function myMap() {
       center: new google.maps.LatLng(latitud, longitud),
       zoom: 14
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    var map = new google.maps.Map(document.getElementById('googleMap'), mapProp);
   });
 };

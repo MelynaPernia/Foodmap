@@ -24,15 +24,10 @@ body {
   display: none;
 }
 
-/* .show {
-  display:block;
-} */
-
-
 .container-flex {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 /*^****** View main *****^*/
@@ -59,18 +54,17 @@ body {
 
 .images-list div {
   height: 20vh;
-  border: 1px solid blue;
 }
 
 .images-list div p {
-  position: absolute;
+  bottom: 5vh;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.1em;
-  top: 5vh;
   left: 5vh;
+  position: absolute;
   right: 5vh;
-  bottom: 5vh;
+  top: 5vh;
   width: auto;
 }
 
@@ -82,4 +76,8 @@ body {
 /*^----- modal of the images  -----^*/
 #myModal {
   color: var(--black);
+}
+
+.modal-photo {
+  width: auto;
 }

@@ -1,24 +1,26 @@
 var data = {
   'comida marina': [
     {
-      name: 'Cevichería Marimar',
+      name: 'cevicheria marimar',
       price: {
         'price-min': 19.90,
         'price-max': 40.00
       },
       address: 'Av. Aviación 3031, Cercado de Lima 15037',
       phono: '(01) 2250044',
-      photo: 'tradiciones criollas.jpg'
+      photo: 'cevicheria marimar.jpg',
+      maps: '../assets/images/restaurants-maps/cevicheria-marimar.PNG'
     },
     {
-      name: 'Cevicheria Los Delfines',
+      name: 'cevicheria los delfines',
       price: {
         'price-min': 15.90,
         'price-max': 29.90
       },
       address: 'Isabel Chimpu Ocllo 759, Carabayllo 15316',
       phono: '(01) 5435650',
-      photo: 'tradiciones criollas.jpg'
+      photo: 'cevicheria los delfines.jpg',
+      maps: '../assets/images/restaurants-maps/cevicheria-delfines.PNG'
     }
   ],
   'comida criolla': [
@@ -30,7 +32,8 @@ var data = {
       },
       address: 'Jirón Cuzco 270, Cercado de Lima 15001',
       phono: '(01) 4285349',
-      photo: 'tradiciones criollas.jpg'
+      photo: 'tradiciones criollas.jpg',
+      maps: '../assets/images/restaurants-maps/tradiciones-criollas.PNG'
     },
     {
       name: 'sabores peruanos',
@@ -40,7 +43,8 @@ var data = {
       },
       address: 'Av. Alfredo Benavides 2392, Miraflores 15048',
       phono: '(01) 4492145',
-      photo: 'sabores peruanos.jpg'
+      photo: 'sabores peruanos.jpg',
+      maps: '../assets/images/restaurants-maps/sabores-peruanos.PNG'
 
     }
   ],
@@ -53,7 +57,8 @@ var data = {
       },
       address: 'Av. Caminos del Inca 1666, Santiago de Surco 15039',
       phono: '(01) 2752738',
-      photo: 'tradiciones criollas.jpg'
+      photo: 'la choza de la anaconda.jpg',
+      maps: '../assets/images/restaurants-maps/choza-anaconda.PNG'
     },
     {
       name: 'El guacamayo',
@@ -63,7 +68,8 @@ var data = {
       },
       address: 'Av Mello Franco 626, Jesús María 15072',
       phono: '(01) 4314803',
-      photo: 'tradiciones criollas.jpg'
+      photo: 'el guacamayo.jpg',
+      maps: '../assets/images/restaurants-maps/guacamayo.PNG'
     }
   ]
 };

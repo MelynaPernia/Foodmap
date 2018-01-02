@@ -2,9 +2,11 @@ $(document).ready(function() {
   function getTypeFood() {
     return Object.keys(data);
   }
+
   function getRestaurant(typeFood) {
     return data[typeFood];
   }
+
   function clearInput(name) {
     $(name).text('');
   }
@@ -32,7 +34,7 @@ $(document).ready(function() {
       }
     }
   }
-  // Cargar las imágenes con un parametro
+  // Cargar las imágenes con un parámetro
   function loadSelectRestaurant(typeFood) {
     var arrRestaurant = getRestaurant(typeFood);
     var dataName = '[data-name]';
@@ -51,18 +53,19 @@ $(document).ready(function() {
       var arrRestaurant = getRestaurant(arrTypeFood[i]);
       for (var j = 0; j < arrRestaurant.length; j++) {
         if (arrRestaurant[j]['name'] === nameRestaurant) {
-          var photo = arrRestaurant[j]['photo'];
+          var photo = arrRestaurant[j]['maps'];
           var address = arrRestaurant[j]['address'];
           var detalles = arrRestaurant[j]['phono'];
           $('.modal-title').text(nameRestaurant);
-          $('.modal-photo').text(photo);
           $('.modal-address').text(address);
           $('.modal-detalles').text(detalles);
+          $('.modal-photo').html('<img src = ' + arrRestaurant[j]['maps'] + ' class="img-responsive">');
         }
       }
     }
   }
 
+  // Inicilizando
   loadRestaurant();
   desabledButton('.btn-search-type-food');
 
